@@ -1,0 +1,189 @@
+
+:root{
+    --body-blue: hsl(217, 54%, 11%);
+    --card-blue: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+.attribution { 
+    padding-top: 33px;
+    font-size: 12px; 
+    text-align: center;
+    color:white
+}
+
+*{
+    font-family: Outfit;
+}
+
+.attribution a { 
+    color: var(--soft-blue); 
+}
+
+
+body{
+    background-color: var(--body-blue);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+}
+
+.card{
+    background-color:var(--card-blue);
+    width:300px;
+    height:525px;
+    margin:auto;
+    border-radius: 20px;
+    box-shadow: -5px 10px 20px 20px rgb(0,0,0,0.17);
+    
+} 
+
+.qr-code{
+    height: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: Outfit;
+    font-size: 15px;
+    
+}
+
+.title{
+
+    width:85%;
+    font-size:18px;
+    color:var(--white);
+    font-weight:600;
+    margin-left:24px;
+    transition: color 0.25s;
+    margin-top: -10px;
+
+}
+
+.desc{ 
+    margin: 15px 10px 10px 25px;
+    width:90%;
+    color:var(--soft-blue);
+    font-size:15px;
+    font-weight: 300;
+    line-height: 20px;
+
+}
+.code{
+    border-radius: 10px;
+    margin: 20px 20px 0px 20px;
+    position: relative;
+}
+
+.stats{
+    font-weight: 600;
+    color:var(--cyan);
+    display: flex;
+    align-items: center;
+    
+}
+
+.stats-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+.stats img{
+    margin-top: 2px;
+    padding-right: 6px;
+    width:12%;
+}
+
+.name{
+    color:var(--white);
+    padding-left: 3px;
+    transition: color 0.25s;
+}
+
+.timer{
+    color:var(--soft-blue);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    margin-left: 85px;
+}
+
+.timer img{
+    width:17%;
+    padding-right: 5px;
+}
+
+.timer p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+hr{
+    margin-top: 20px;
+    margin-left: 23px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 13px;
+    color: var(--soft-blue);
+}
+
+.profile img{
+    width:25px;
+    height:25px;
+    margin-right: 15px;
+    margin-left: -3px;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.overlay{
+    position: absolute;
+    width: 86.8%;
+    height: 82.8%;
+    background-color: var(--cyan);
+    border-radius: 10px;
+    margin: 20px 20px 0px 20px;
+    opacity:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity 0.30s;
+}
+
+.overlay:hover{
+    color: red;
+    cursor: pointer;
+    opacity:1;
+}
+
+.title:hover{
+    color:var(--cyan);
+    cursor: pointer;
+}
+
+.name:hover{
+    cursor: pointer;
+    color:var(--cyan);
+}
